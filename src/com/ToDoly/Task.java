@@ -1,15 +1,26 @@
+/*
+ * Task class hold the details of the specific details associated with the Task
+ * @author Siminy
+ * @version 27-09-2018 version 1 */
+
+
+
+
 package com.ToDoly;
 
 import java.io.Serializable;
 
+
 public class Task implements Serializable
 {
+    /* Attributes for the task - title, duedate,taskstatus,projectname */
+
     private String taskTitle;
-    //private Date dueDate;
+    //private Date dueDate;  --- not implemented
     private String taskStatus;
     private String projectName;
 
-//Date dueDate
+    /* Constructor created with parameters - title,taskstatus,projectname */
 
 
     Task(String taskTitle,String taskStatus,String projectName )
@@ -38,6 +49,8 @@ public class Task implements Serializable
         }
     }
 
+    /* Mutator methods for setting the title,taskstatus,projectname */
+
     public void setTaskTitle(String taskTitle)
     {
         this.taskTitle = taskTitle;
@@ -53,10 +66,9 @@ public class Task implements Serializable
         this.projectName = projectName;
     }
 
-//public void setdueDate(Date dueDate)
-//{
-//this.dueDate = dueDate;
-//}
+
+
+    /* Accessor methods for accessing the title,taskstatus,projectname */
 
     public String getTaskTitle()
     {
@@ -73,17 +85,19 @@ public class Task implements Serializable
         return projectName ;
     }
 
-    public String toString()
-    {
-        return this.projectName + this.taskStatus + this.taskTitle;
-    }
-
-
-
-
-
-//public Date getdueDate()
-//{
-    //return dueDate ;
-//}
 }
+
+/*
+Functionality yet to be implemented
+**************************************
+* public Date getdueDate()
+* {
+* return dueDate ;
+* }
+* public void setdueDate(Date dueDate)
+* {
+* this.dueDate = dueDate;
+* }
+*/
+
+
