@@ -1,6 +1,14 @@
+/*
+ * Class to handle the Menu and associated tasks
+ * @author Siminy
+ * @version 27-09-2018 version 1 */
+
+
 package com.ToDoly;
 
 import java.util.*;
+
+
 
 public class TaskInterface
 {
@@ -9,14 +17,16 @@ public class TaskInterface
     public TaskInterface()
     {
     }
+
+    /* Display the menu options */
+
     public void showMenu()
     {
         System.out.println("*********************************************************");
         System.out.println("                Welcome to ToDoly.");
         System.out.println("*********************************************************");
         System.out.println("You have " + "X tasks todo and "+ " Y tasks are done!");
-        System.out.println(" *********************************************************");
-        System.out.println();
+        System.out.println("**********************************************************");
         System.out.println();
         System.out.println();
         System.out.println("                      Pick up an option");
@@ -27,6 +37,9 @@ public class TaskInterface
         System.out.println("(4) Save and Quit");
         System.out.println("*********************************************************");
     }
+
+    /* Functions to handle the various task functions */
+
     public void update()
     {
         task_file_handler.updateTask();
@@ -42,6 +55,9 @@ public class TaskInterface
     public void run()
     {
         Scanner sc = new Scanner(System.in);
+
+        /* Perform various operations based on the user selection */
+
         while(true)
         {
             showMenu();
@@ -51,29 +67,27 @@ public class TaskInterface
             String menuItem = sc.next();
             System.out.println();
             System.out.println();
-            System.out.println();
-            System.out.println();
             switch(menuItem)
             {
-                case "1": System.out.println("Show Task List");
-                    System.out.println("-----------------------------------------------------------");
+                case "1": System.out.println("                Show Task List                         ");
+                    System.out.println("                ----------------");
                     display();
                     break;
 
-                case "2": System.out.println("Add New Task");
-                    System.out.println("-----------------------------------------------------------");
+                case "2": System.out.println("                 Add New Task");
+                    System.out.println("                 ---------------");
 
                     add();
                     break;
 
-                case "3": System.out.println("Edit Task (update, mark as done, remove)");
-                    System.out.println("-----------------------------------------------------------");
+                case "3": System.out.println("        Edit Task (update, mark as done, remove)");
+                    System.out.println("         -----------------------------------------");
 
                     update();
                     break;
 
-                case "4": System.out.println("Save and Quit ");
-                    System.out.println("-----------------------------------------------------------");
+                case "4": System.out.println("                Save and Quit ");
+                    System.out.println("               ------------------");
 
                     System.exit(0);
 

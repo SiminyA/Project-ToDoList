@@ -16,7 +16,7 @@ public class FileHandler implements Serializable
 
     /*
      * Function to handle the file operations - write the tasks to the file
-    */
+     */
 
     public void taskfilewrite()
     {
@@ -51,7 +51,7 @@ public class FileHandler implements Serializable
 
     }
 
-     /*
+    /*
      * Function to handle the file operations - read the file and load the tasks to the List
      */
 
@@ -93,7 +93,7 @@ public class FileHandler implements Serializable
 
 
     }
-     /*
+    /*
      * Function to update the particular task with the new details
      */
 
@@ -132,17 +132,27 @@ public class FileHandler implements Serializable
         {
 
             System.out.println();
-            System.out.println("The task on exist, please proceed to edit the task");
+            System.out.println("The task exist, please proceed to edit the task");
         }
 
         /*
-        * Update the task with the  new details and write the task to the file
-        */
+         * Update the task with the  new details and write the task to the file
+         *
+         */
+
         if(taskindex>0)
         {
-            System.out.println("=====================");
-            System.out.println("Add New Task details");
-            System.out.println("=====================");
+            System.out.println();
+            System.out.println("      Current task to be edited ");
+            System.out.println("       Task Name          " + "        Status         " + "            Project Name             ");
+            System.out.println("      -------------              -----------                 -------------    ");
+            System.out.format("%15s %25s %30s",tasks.get(taskindex).getTaskTitle(),tasks.get(taskindex).gettaskStatus(),tasks.get(taskindex).getprojectName());
+            System.out.println();
+            System.out.println();
+            System.out.println("============================================");
+            System.out.println("Edit tasks");
+            System.out.println("============================================");
+            System.out.println();
             System.out.println();
             System.out.println();
             System.out.println("Enter the new Task Name :");
@@ -166,7 +176,7 @@ public class FileHandler implements Serializable
 
     }
 
-     /*
+    /*
      * Function to add a new task and write the task to the file
      */
 
@@ -178,12 +188,12 @@ public class FileHandler implements Serializable
         Scanner sc = new Scanner(System.in);
         System.out.println();
         System.out.println();
-        System.out.println("=====================");
-        System.out.println("Add New Task");
-        System.out.println("=====================");
+        System.out.println("============================================");
+        System.out.println("Add Task");
+        System.out.println("============================================");
         System.out.println();
         System.out.println();
-        System.out.println("Enter the Task Name :");
+        System.out.println("Enter the new Task Name :");
         String taskname = sc.next();
         System.out.println();
         System.out.println();
@@ -196,8 +206,8 @@ public class FileHandler implements Serializable
 
         tasks.add(new Task(taskname,status,projectname));
 
-       taskfilewrite();
-        System.out.println();
+        taskfilewrite();
+        System.out.println("New task added");
 
     }
 
@@ -213,12 +223,13 @@ public class FileHandler implements Serializable
             FileInputStream file_input_stream = new FileInputStream("/Users/tmp-sda-1189/Documents/Check.txt");
             ObjectInputStream input_stream = new ObjectInputStream(file_input_stream);
             Object obj = null;
-            System.out.println(" Task Name          " +  "       Status         "  + "       Project Name             ");
+            System.out.println("       Task Name          " + "        Status         " + "            Project Name             ");
+            System.out.println("      -------------              -----------                 -------------    ");
             while(file_input_stream.available()>0)
             {
                 obj = input_stream.readObject();
                 Task readtask = (Task) obj;
-                System.out.println(readtask.getTaskTitle()+"   "+readtask.gettaskStatus()+"  "+readtask.getprojectName());
+                System.out.format("%15s %25s %30s",readtask.getTaskTitle(),readtask.gettaskStatus(),readtask.getprojectName());
                 System.out.println();
             }
         }
@@ -248,3 +259,4 @@ public class FileHandler implements Serializable
     }
 
 }
+
