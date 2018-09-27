@@ -1,3 +1,8 @@
 Purpose :  Provide the instructional manual for the users to enable the user to use the toDoly applications 
 Instructions
-  2.1 
+a. Serach for Terminal in MAC machine
+b. Go to the specifc folder the applicatoin resides (using cd command)
+c. Type javac MainClass.java
+d. Type java MainClass
+e. User will be displayed with ToDoLy menu
+![GitHub Logo](/images/logo.png)
