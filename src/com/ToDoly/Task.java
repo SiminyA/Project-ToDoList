@@ -9,6 +9,9 @@
 package com.ToDoly;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.*;
+
 
 
 public class Task implements Serializable
@@ -16,37 +19,21 @@ public class Task implements Serializable
     /* Attributes for the task - title, duedate,taskstatus,projectname */
 
     private String taskTitle;
-    //private Date dueDate;  --- not implemented
+    private LocalDate dueDate ;
     private String taskStatus;
     private String projectName;
 
     /* Constructor created with parameters - title,taskstatus,projectname */
 
 
-    Task(String taskTitle,String taskStatus,String projectName )
+    Task(String taskTitle,LocalDate dueDate,String taskStatus,String projectName )
     {
-        if(taskTitle ==null)
-        {
-            taskTitle ="";
-        }
-        if(taskStatus ==null)
-        {
-            taskStatus ="";
-        }
-        if(projectName ==null)
-        {
-            projectName ="";
-        }
         this.taskTitle=taskTitle.trim();
-        //this.dueDate=dueDate;
+        this.dueDate=dueDate;
         this.taskStatus=taskStatus.trim();
         this.projectName=projectName.trim();
 
-        if(this.taskTitle.isEmpty() && this.taskStatus.isEmpty() && this.projectName.isEmpty())
 
-        {
-            throw new IllegalStateException("The task list cannot be empty");
-        }
     }
 
     /* Mutator methods for setting the title,taskstatus,projectname */
@@ -55,6 +42,11 @@ public class Task implements Serializable
     {
         this.taskTitle = taskTitle;
     }
+
+    public void setTaskdueDate(LocalDate dueDate)
+{
+    this.dueDate = dueDate;
+}
 
     public void settaskStatus(String taskStatus)
     {
@@ -73,6 +65,11 @@ public class Task implements Serializable
     public String getTaskTitle()
     {
         return taskTitle;
+    }
+
+    public LocalDate gettaskdueDate()
+    {
+        return dueDate ;
     }
 
     public String gettaskStatus()
