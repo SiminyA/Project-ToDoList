@@ -4,97 +4,83 @@
  * @version 27-09-2018 version 1 */
 
 
-
-
 package com.ToDoly;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.*;
 
+//, Comparable<Task>
 
-
-public class Task implements Serializable
-{
+public class Task implements Serializable {
     /* Attributes for the task - title, duedate,taskstatus,projectname */
 
     private String taskTitle;
-    private LocalDate dueDate ;
+    private LocalDate dueDate;
     private String taskStatus;
     private String projectName;
 
-    /* Constructor created with parameters - title,taskstatus,projectname */
+    /* Constructor created with parameters - title,dueDate, taskstatus, projectname */
 
 
-    Task(String taskTitle,LocalDate dueDate,String taskStatus,String projectName )
-    {
-        this.taskTitle=taskTitle.trim();
-        this.dueDate=dueDate;
-        this.taskStatus=taskStatus.trim();
-        this.projectName=projectName.trim();
+    Task(String taskTitle, LocalDate dueDate, String taskStatus, String projectName) {
+        this.taskTitle = taskTitle.trim();
+        this.dueDate = dueDate;
+        this.taskStatus = taskStatus.trim();
+        this.projectName = projectName.trim();
 
 
     }
 
-    /* Mutator methods for setting the title,taskstatus,projectname */
+    /* Mutator methods for setting the title,dueDate, taskstatus,projectname */
 
-    public void setTaskTitle(String taskTitle)
-    {
-        this.taskTitle = taskTitle;
+    public void setTaskdueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
     }
 
-    public void setTaskdueDate(LocalDate dueDate)
-{
-    this.dueDate = dueDate;
-}
-
-    public void settaskStatus(String taskStatus)
-    {
+    public void settaskStatus(String taskStatus) {
         this.taskStatus = taskStatus;
     }
 
-    public void setprojectName(String projectName)
-    {
+    public void setprojectName(String projectName) {
         this.projectName = projectName;
     }
 
-
-
-    /* Accessor methods for accessing the title,taskstatus,projectname */
-
-    public String getTaskTitle()
-    {
+    public String getTaskTitle() {
         return taskTitle;
     }
 
-    public LocalDate gettaskdueDate()
-    {
-        return dueDate ;
+
+
+    /* Accessor methods for accessing the title,dueDate,taskstatus,projectname */
+
+    public void setTaskTitle(String taskTitle) {
+        this.taskTitle = taskTitle;
     }
 
-    public String gettaskStatus()
-    {
-        return taskStatus ;
+    public LocalDate gettaskdueDate() {
+        return dueDate;
     }
 
-    public String getprojectName()
-    {
-        return projectName ;
+    public String gettaskStatus() {
+        return taskStatus;
     }
 
+    public String getprojectName() {
+        return projectName;
+    }
+
+   /* @Override
+    public int compareTo(Task taskdata) {
+
+        if (gettaskdueDate() == null || taskdata.gettaskdueDate() == null) {
+            return 0;
+        }
+        return gettaskdueDate().compareTo(taskdata.gettaskdueDate());
+
+
+    }*/
 }
 
-/*
-Functionality yet to be implemented
-**************************************
-* public Date getdueDate()
-* {
-* return dueDate ;
-* }
-* public void setdueDate(Date dueDate)
-* {
-* this.dueDate = dueDate;
-* }
-*/
+
 
 
