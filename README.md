@@ -1,6 +1,10 @@
 # Project-ToDoList
-Project Objective : Build a todo list application​.
-The application will allow the user to perform the following
+
+##Project Objective : Build a todo list application​.
+
+### Project Description
+
+#### The application will allow the user to perform the following
 1.Create new tasks - the tasks details will include task title, status , due date & project name
 2.Edit the task - Edit the status
 3.Display tasks
