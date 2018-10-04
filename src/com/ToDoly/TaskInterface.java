@@ -12,7 +12,6 @@ import java.io.Serializable;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.time.LocalDate;
-import java.util.Comparator;
 
 
 public class TaskInterface implements Serializable {
@@ -73,7 +72,7 @@ public class TaskInterface implements Serializable {
         System.out.println("Enter the Task No to edit: ");
         int taskindex = Integer.parseInt(sc.next());
         if (taskindex > tasks.size()) {
-            System.out.println("Please specify valid task no:");
+            System.out.println("Please specify valid task no");
         } else {
             taskindex = taskindex - 1;
             System.out.println();
@@ -137,10 +136,10 @@ public class TaskInterface implements Serializable {
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
             LocalDate current_date = LocalDate.now();
 
-            LocalDate task_due_date = LocalDate.parse(new_dueDate, dtf);
+            LocalDate edit_task_due_date = LocalDate.parse(new_dueDate, dtf);
             System.out.println();
 
-            if ((task_due_date.compareTo(current_date)) < 0) {
+            if ((edit_task_due_date.compareTo(current_date)) < 0) {
                 System.out.println("Due date cannot be less than the current date");
                 System.out.println();
                 System.out.println();
@@ -152,15 +151,21 @@ public class TaskInterface implements Serializable {
 
                 System.out.println("Enter the new Project Name  :");
                 String edit_projectname = sc.nextLine();
-                tasks.get(task_index).setTaskTitle(edit_taskname);
-                tasks.get(task_index).setTaskdueDate(task_due_date);
-                tasks.get(task_index).settaskStatus(edit_status);
-                tasks.get(task_index).setprojectName(edit_projectname);
-                System.out.println();
-                System.out.println();
-                System.out.println("Current Task " + (task_index + 1) + "updated with new values:" + tasks.get(task_index).getTaskTitle() + " " + tasks.get(task_index).gettaskdueDate() + "   " + tasks.get(task_index).gettaskStatus() + "   " + tasks.get(task_index).getprojectName());
-                System.out.println();
-                System.out.println();
+
+                if (edit_projectname.isEmpty() || edit_status.isEmpty() || new_dueDate.isEmpty() || edit_taskname.isEmpty()) {
+                    System.out.println();
+                    System.out.println("No valid task details specified , Please specify the task details");
+                } else {
+                    tasks.get(task_index).setTaskTitle(edit_taskname);
+                    tasks.get(task_index).setTaskdueDate(edit_task_due_date);
+                    tasks.get(task_index).settaskStatus(edit_status);
+                    tasks.get(task_index).setprojectName(edit_projectname);
+                    System.out.println();
+                    System.out.println();
+                    System.out.println("Current Task " + (task_index + 1) + "updated with new values:" + tasks.get(task_index).getTaskTitle() + " " + tasks.get(task_index).gettaskdueDate() + "   " + tasks.get(task_index).gettaskStatus() + "   " + tasks.get(task_index).getprojectName());
+                    System.out.println();
+                    System.out.println();
+                }
             }
 
         } catch (java.time.format.DateTimeParseException parse_Exception) {
@@ -181,13 +186,18 @@ public class TaskInterface implements Serializable {
         System.out.println();
         System.out.println("Enter the new Status :");
         String edit_status = sc.nextLine();
-        tasks.get(task_index).settaskStatus(edit_status);
-        System.out.println();
-        System.out.println();
-        System.out.println("Current Task " + (task_index + 1) + " updated with new status:" + "   " + tasks.get(task_index).gettaskStatus());
-        System.out.println();
-        System.out.println();
+        if (edit_status.isEmpty()) {
+            System.out.println();
+            System.out.println("Please specify valid status for the task");
+        } else {
 
+            tasks.get(task_index).settaskStatus(edit_status);
+            System.out.println();
+            System.out.println();
+            System.out.println("Current Task " + (task_index + 1) + " updated with new status:" + "   " + tasks.get(task_index).gettaskStatus());
+            System.out.println();
+            System.out.println();
+        }
 
     }
 
@@ -195,11 +205,11 @@ public class TaskInterface implements Serializable {
         Scanner sc = new Scanner(System.in);
         System.out.println();
         System.out.println();
-        System.out.println("Do you want to delete the task(Y/N");
+        System.out.println("Do you want to delete the task(Y/N)");
         String delete_response = sc.next();
         System.out.println();
         System.out.println();
-        if (delete_response.equals("Y")) {
+        if (delete_response.toUpperCase().equals("Y")) {
             tasks.remove(task_index);
             System.out.println("Task " + (task_index + 1) + " is deleted");
         } else {
@@ -225,6 +235,7 @@ public class TaskInterface implements Serializable {
             String new_taskname = sc.nextLine();
             System.out.println();
 
+
             System.out.println("Enter the due date (yyyy-mm-dd):");
             String new_dueDate = sc.nextLine();
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -246,10 +257,17 @@ public class TaskInterface implements Serializable {
                 System.out.println("Enter the Project Name :");
                 String new_projectname = sc.nextLine();
 
-                tasks.add(new Task(new_taskname, task_due_date, new_status, new_projectname));
-                System.out.println();
+                if ((new_taskname.isEmpty()) || (new_projectname.isEmpty()) || (new_status.isEmpty()) || (new_dueDate.isEmpty())) {
+                    System.out.println();
+                    System.out.println("No valid task details specified,Please specify the task details");
 
-                System.out.println("New task added");
+                } else {
+                    tasks.add(new Task(new_taskname, task_due_date, new_status, new_projectname));
+                    System.out.println();
+                    System.out.println("New task added");
+                }
+
+                System.out.println();
                 System.out.println();
 
 
@@ -259,6 +277,7 @@ public class TaskInterface implements Serializable {
             System.out.println("Date entered is not in the specified format, please specify in yyyy-MM-dd format");
 
         }
+
         System.out.println();
         System.out.println();
     }
@@ -303,29 +322,26 @@ public class TaskInterface implements Serializable {
         String display_option = sc.next();
         System.out.println();
         System.out.println();
+
         switch (display_option) {
             case "1":
                 System.out.println("Show task list - Sort by date  ");
                 System.out.println("-------------------------------");
 
-                System.out.printf("%10s %20s %25s %25s ", "Due Date", "Task Name", "Status", " Project Name ");
-                System.out.println();
-                System.out.printf("%10s %20s %25s %25s ", "--------", "---------", "--------", "-------------");
-                System.out.println();
-
-
-                Comparator<Task> task_duedate_comparator = new Comparator<Task>() {
-                    @Override
-                    public int compare(Task task1, Task task2) {
-                        return task1.gettaskdueDate().compareTo(task2.gettaskdueDate());
-                    }
-                };
-
-                Collections.sort(tasks, task_duedate_comparator);
-                while (index < tasks.size()) {
-                    System.out.printf("%10s %20s %25s %25s ", tasks.get(index).gettaskdueDate(), tasks.get(index).getTaskTitle(), tasks.get(index).gettaskStatus(), tasks.get(index).getprojectName());
+                if(tasks.isEmpty())
+                {
                     System.out.println();
-                    index++;
+                    System.out.println("No tasks available to be displayed , please proceed to add tasks from the main menu") ;
+
+                }
+                else {
+                    System.out.printf("%10s %20s %25s %25s ", "Due Date", "Task Name", "Status", " Project Name ");
+                    System.out.println();
+                    System.out.printf("%10s %20s %25s %25s ", "--------", "---------", "--------", "-------------");
+                    System.out.println();
+
+                    tasks.sort((Task task1, Task task2) -> task1.gettaskdueDate().compareTo(task2.gettaskdueDate()));
+                    tasks.forEach((sorted_list_date) -> System.out.format("%10s %20s %25s %25s %n", sorted_list_date.gettaskdueDate(), sorted_list_date.getTaskTitle(), sorted_list_date.gettaskStatus(), sorted_list_date.getprojectName()));
                 }
                 break;
 
@@ -333,29 +349,25 @@ public class TaskInterface implements Serializable {
             case "2":
                 System.out.println("Show task list - Filter by project name ");
                 System.out.println("----------------------------------------");
-                System.out.println();
-                System.out.println();
+               if(tasks.isEmpty())
+               {
+                   System.out.println();
+                   System.out.println("No tasks available to be displayed , please proceed to add tasks from the main menu") ;
 
+               }
+               else {
 
-                Comparator<Task> project_name_comparator = new Comparator<Task>() {
-                    @Override
-                    public int compare(Task task1, Task task2) {
-                        return task1.getprojectName().compareTo(task2.getprojectName());
-                    }
-                };
+                   System.out.println();
+                   System.out.println();
 
-                Collections.sort(tasks, project_name_comparator);
+                   System.out.printf("%10s %20s %25s %27s ", "Project Name", "Task Name", "Status", "Due Date ");
+                   System.out.println();
+                   System.out.printf("%10s %20s %25s %27s ", "------------", "---------", "--------", " ---------");
+                   System.out.println();
 
-                System.out.printf("%10s %20s %25s %28s ", "Project Name", "Task Name", "Status", "  Due Date ");
-                System.out.println();
-                System.out.printf("%10s %20s %25s %28s ", "-------------", "---------", "--------", " ---------");
-                System.out.println();
-
-                while (index < tasks.size()) {
-                    System.out.printf("%10s %20s %25s %30s ", tasks.get(index).getprojectName(), tasks.get(index).getTaskTitle(), tasks.get(index).gettaskStatus(), tasks.get(index).gettaskdueDate());
-                    System.out.println();
-                    index++;
-                }
+                   tasks.sort((Task task1, Task task2) -> task1.getprojectName().compareTo(task2.getprojectName()));
+                   tasks.forEach((sorted_list_project) -> System.out.printf("%10s %20s %25s %28s %n", sorted_list_project.getprojectName(), sorted_list_project.getTaskTitle(), sorted_list_project.gettaskStatus(), sorted_list_project.gettaskdueDate()));
+               }
                 break;
             default:
                 System.out.println();

@@ -69,16 +69,7 @@ public class Task implements Serializable {
         return projectName;
     }
 
-   /* @Override
-    public int compareTo(Task taskdata) {
 
-        if (gettaskdueDate() == null || taskdata.gettaskdueDate() == null) {
-            return 0;
-        }
-        return gettaskdueDate().compareTo(taskdata.gettaskdueDate());
-
-
-    }*/
 }
 
 

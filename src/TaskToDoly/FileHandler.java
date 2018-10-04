@@ -45,6 +45,8 @@ public class FileHandler implements Serializable {
      */
 
     public List<Task> taskloadtoarray() {
+        System.out.println();
+        System.out.println();
         try {
             FileInputStream file_input_stream = new FileInputStream("/Users/tmp-sda-1189/Documents/SampleTest.txt");
             ObjectInputStream input_stream = new ObjectInputStream(file_input_stream);
@@ -57,6 +59,7 @@ public class FileHandler implements Serializable {
             }
         } catch (ClassNotFoundException cnf_exception) {
             System.out.println("The class not found");
+
         } catch (EOFException eof_exception) {
             System.out.println("No tasks to be displayed");
         } catch (FileNotFoundException fnf_Exception) {
@@ -65,7 +68,7 @@ public class FileHandler implements Serializable {
             System.out.println("Unexpected error");
             io_exception.printStackTrace();
         }
-
+        System.out.println();
         return tasks;
 
     }
