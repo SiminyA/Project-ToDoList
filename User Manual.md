@@ -6,7 +6,11 @@ c. Type javac MainClass.java
 d. Type java MainClass
 e. User will be displayed with ToDoLy menu
 
+<<<<<<< HEAD:User Manual
 
+=======
+![]<img width="447" alt="mainmenu" src="https://user-images.githubusercontent.com/29890115/46719535-f9ff1b80-cc22-11e8-8e03-cdbf0c3dd7ee.png">
+>>>>>>> bb996ed285ae31aa1c88608f02fd7230c4614b86:User Manual.md
 
 *********************************************************
                 Welcome to ToDoly.
