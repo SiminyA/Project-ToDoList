@@ -5,6 +5,9 @@ b. Go to the specifc folder the applicatoin resides (using cd command)
 c. Type javac MainClass.java
 d. Type java MainClass
 e. User will be displayed with ToDoLy menu
+
+
+
 *********************************************************
                 Welcome to ToDoly.
 *********************************************************
