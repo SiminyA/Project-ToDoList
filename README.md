@@ -14,11 +14,11 @@ The tasks will be saved in the text file. Each time the application launches, th
 and the necessary operations can be performed.
 
 
-###Modelling the project:-
+### Modelling the project:-
 To start the initial class diagram was prepared . Attached the diagram in the project repository. This was modified
 once the development was started.
 
-###Class Diagram
+### Class Diagram
 
 
 
