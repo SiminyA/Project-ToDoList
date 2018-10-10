@@ -1,11 +1,10 @@
-/*
- * Class to launch the task menu interface
- * @author Siminy
- * @version 27-09-2018 version 1 */
+/** Class to launch the task menu interface
+ *  @author Siminy
+ * version 27-09-2018 version 1
+ */
 
 
 package TaskToDoly;
-
 
 import com.ToDoly.TaskInterface;
 

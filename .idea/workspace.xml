@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="472c001f-85d4-49d9-b5e8-fe9e1b2a42f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="472c001f-85d4-49d9-b5e8-fe9e1b2a42f5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,23 +9,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Project_ToDoList$TaskTest.ic" NAME="TaskTest Coverage Results" MODIFIED="1538739570815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ToDoly.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myFlattenPackages" value="true" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="495050877">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="User Manual" value="1" />
           <entry key="check-txt" value="1" />
           <entry key="form" value="6" />
           <entry key="iml" value="3" />
-          <entry key="java" value="22" />
-          <entry key="md" value="2" />
+          <entry key="java" value="34" />
+          <entry key="md" value="4" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
@@ -35,20 +46,23 @@
         <counts>
           <entry key="GUI_DESIGNER_FORM" value="6" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="22" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="34" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="11752" />
-          <entry key="md" value="677" />
+          <entry key="User Manual" value="2" />
+          <entry key="java" value="20571" />
+          <entry key="md" value="877" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11752" />
-          <entry key="PLAIN_TEXT" value="677" />
+          <entry key="JAVA" value="20571" />
+          <entry key="Markdown" value="200" />
+          <entry key="PLAIN_TEXT" value="679" />
         </counts>
       </usages-collector>
     </session>
@@ -61,24 +75,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TaskToDoly/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#0#375#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="378" column="28" lean-forward="true" selection-start-line="378" selection-start-column="28" selection-end-line="378" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,27 +87,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ToDoly/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="382">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
-                <element signature="e#0#2089#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1416#1417#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1493#1494#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1565#1566#0" expanded="true" />
-                <element signature="e#1599#1600#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#1816#1817#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="446" column="26" lean-forward="true" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TaskToDoly/FileHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="29" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TaskToDoly/FileHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskInterfaceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="115" column="9" lean-forward="true" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,26 +160,12 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ToDoly/SampleTest.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TaskToDoly/FileHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="435">
+                <caret line="29" selection-start-line="29" selection-end-line="29" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -146,6 +177,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -172,12 +204,22 @@
         <option value="$PROJECT_DIR$/src/com/ToDoly/ProjectNameComparator.java" />
         <option value="$PROJECT_DIR$/src/com/ToDoly/FileHandler.java" />
         <option value="$PROJECT_DIR$/src/com/ToDoly/MainClass.java" />
-        <option value="$PROJECT_DIR$/src/com/ToDoly/Task.java" />
+        <option value="$PROJECT_DIR$/src/com/ToDoly/TaskTest.java" />
+        <option value="$PROJECT_DIR$/src/TaskToDoly/MainClass.java" />
+        <option value="$PROJECT_DIR$/User Manual" />
         <option value="$PROJECT_DIR$/src/TaskToDoly/FileHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/ToDoly/Task.java" />
+        <option value="$PROJECT_DIR$/src/com/ToDoly/TaskInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/src/TaskToDoly/FileHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="TaskTest" />
+    </enabled-run-configurations>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -185,10 +227,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -203,23 +245,6 @@
               <item name="Project-ToDoList" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project-ToDoList" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Project-ToDoList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project-ToDoList" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project-ToDoList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project-ToDoList" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project-ToDoList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project-ToDoList" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TaskToDoly" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -228,14 +253,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="95" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538643333400" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539154172327" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="TaskToDoly" />
+      <recent name="com.ToDoly" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/ToDoly" />
     </key>
@@ -252,7 +290,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.MainClass (1)">
+    <configuration name="MainClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TaskToDoly.MainClass" />
+      <module name="Project-ToDoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TaskToDoly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainClass" />
       <module name="Project-ToDoList" />
@@ -273,15 +324,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="Project-ToDoList" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ToDoList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ToDoly.ToDoList" />
+    <configuration name="FileHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project-ToDoList" />
       <extension name="coverage">
         <pattern>
@@ -289,20 +332,54 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="TaskToDoly" />
+      <option name="MAIN_CLASS_NAME" value="TaskToDoly.FileHandlerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskInterfaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project-ToDoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ToDoly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ToDoly" />
+      <option name="MAIN_CLASS_NAME" value="com.ToDoly.TaskInterfaceTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project-ToDoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ToDoly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ToDoly" />
+      <option name="MAIN_CLASS_NAME" value="com.ToDoly.TaskTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.MainClass" />
-      <item itemvalue="Application.ToDoList" />
+      <item itemvalue="Application.MainClass (1)" />
+      <item itemvalue="JUnit.TaskTest" />
+      <item itemvalue="JUnit.TaskInterfaceTest" />
+      <item itemvalue="JUnit.FileHandlerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainClass (1)" />
+        <item itemvalue="JUnit.FileHandlerTest" />
+        <item itemvalue="JUnit.TaskInterfaceTest" />
         <item itemvalue="Application.MainClass" />
-        <item itemvalue="Application.ToDoList" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.TaskTest" />
       </list>
     </recent_temporary>
   </component>
@@ -319,6 +396,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 03h 39m 38s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 03h 40m 25s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 03h 40m 51s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 04h 18m 45s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 04h 21m 14s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 04h 23m 31s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 04h 25m 19s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 04h 26m 32s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskInterfaceTest - 2018.10.09 at 06h 28m 44s.xml">
+      <configuration name="TaskInterfaceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileHandlerTest - 2018.10.09 at 09h 38m 30s.xml">
+      <configuration name="FileHandlerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -329,10 +438,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="810" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61699164" visible="true" weight="0.19670959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61699164" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" sideWeight="0.38300836" side_tool="true" weight="0.19670959" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -342,26 +450,27 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49570817" weight="0.49164346" />
       <window_info anchor="bottom" x="0" y="45" width="1440" height="790" id="Run" order="2" sideWeight="0.49852726" type="WINDOWED" weight="0.057101026" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.64663804" weight="0.21169916" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.64663804" weight="0.19498608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32871014" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" weight="0.32777777" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.35336193" side_tool="true" weight="0.5598886" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" weight="0.3286908" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.490701" weight="0.32729805" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297568" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" weight="0.32729805" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.490701" weight="0.2799443" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.12804006" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297568" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61699164" weight="0.19670959" />
-      <window_info id="Structure" order="1" sideWeight="0.38300836" side_tool="true" visible="true" weight="0.19670959" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61699164" visible="true" weight="0.24177396" />
+      <window_info id="Structure" order="1" sideWeight="0.38300836" side_tool="true" weight="0.19670959" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -369,23 +478,24 @@
       <window_info id="Favorites" order="6" sideWeight="0.1886269" side_tool="true" weight="0.18669528" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49570817" weight="0.49164346" />
-      <window_info anchor="bottom" x="0" y="45" width="1440" height="791" id="Run" order="2" sideWeight="0.49852726" type="WINDOWED" weight="0.057101026" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.64663804" weight="0.20473538" />
+      <window_info anchor="bottom" x="0" y="45" width="1440" height="790" id="Run" order="2" sideWeight="0.49852726" type="WINDOWED" weight="0.057101026" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.64663804" weight="0.19498608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32871014" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" weight="0.32777777" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.35336193" side_tool="true" weight="0.5598886" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" weight="0.3286908" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.490701" weight="0.32729805" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297568" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" weight="0.32729805" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.490701" visible="true" weight="0.2799443" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.12804006" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297568" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -396,63 +506,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>98</line>
+          <line>112</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>105</line>
+          <line>119</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>112</line>
+          <line>126</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>193</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>204</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>126</line>
+          <line>146</line>
           <properties />
           <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>196</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java</url>
-          <line>187</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/TaskToDoly/FileHandler.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/TaskToDoly/FileHandler.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -489,13 +563,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ToDoly/Sample.txt" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/ObjectStreamClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="688" selection-start-line="688" selection-end-line="688" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/ObjectInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -518,13 +585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskComparator.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Comparable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -532,12 +593,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/ProjectNameComparator.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/SampleTest.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/ProjectNameComparator.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -545,76 +601,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/SampleTest.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/ObjectStreamClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="688" selection-start-line="688" selection-end-line="688" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/time/format/DateTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26685">
+          <caret line="1890" column="39" selection-start-line="1890" selection-start-column="17" selection-end-line="1890" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
+        <state relative-caret-position="523">
           <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User Manual">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ToDoly/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="382">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <element signature="e#0#2089#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="115" column="9" lean-forward="true" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TaskToDoly/FileHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TaskToDoly/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#0#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="378" column="28" lean-forward="true" selection-start-line="378" selection-start-column="28" selection-end-line="378" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TaskToDoly/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="244">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="29" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ToDoly/TaskInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="446" column="26" lean-forward="true" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="435">
+            <caret line="29" selection-start-line="29" selection-end-line="29" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
