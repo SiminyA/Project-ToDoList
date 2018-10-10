@@ -66,6 +66,56 @@ public class TaskInterface implements Serializable {
         System.out.println("*********************************************************");
     }
 
+    /**
+     * Method to display the menu and enable user to select the preferred option from the menu. User can
+     * perform various operations for the ToDoList.
+     * Option 1 will display all of tasks based on due date or project name
+     * Option 2 will allow the user to add a task
+     * Option 3 will allow user to edit the task
+     * Option 4 will save the tasks to the file and exit from the application
+     */
+
+    public void run() {
+        Scanner sc = new Scanner(System.in);
+
+        /* Perform various operations based on the user selection */
+
+        while (true) {
+            showMenu();
+            System.out.println();
+            System.out.println();
+            System.out.println("Please select from the menu list");
+            String menuItem = sc.next();
+            switch (menuItem) {
+                case "1":
+                    showListdisplay();
+                    break;
+
+                case "2":
+                    add();
+                    break;
+
+                case "3":
+                    update();
+                    break;
+
+                case "4":
+                    System.out.println("-------------------------------------------");
+                    System.out.println("Save and Quit");
+                    System.out.println("-------------------------------------------");
+                    task_file_handler.taskwritetofile();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println("Saving the tasks to the file");
+                    System.exit(0);
+
+                default:
+                    System.out.println();
+                    System.out.println("Please specify a valid number");
+
+            }
+        }
+    }
 
     /** Update method is used to modify the tasks based on the task number specified by the user.
      * User can perform the update of the tasks , change the task status
@@ -421,55 +471,8 @@ public class TaskInterface implements Serializable {
         System.out.println();
     }
 
-    /**
-     * Method to display the menu and enable user to select the preferred option from the menu. User can
-     * perform various operations for the ToDoList.
-     * Option 1 will display all of tasks based on due date or project name
-     * Option 2 will allow the user to add a task
-     * Option 3 will allow user to edit the task
-     * Option 4 will save the tasks to the file and exit from the application
-     */
 
-    public void run() {
-        Scanner sc = new Scanner(System.in);
 
-        /* Perform various operations based on the user selection */
 
-        while (true) {
-            showMenu();
-            System.out.println();
-            System.out.println();
-            System.out.println("Please select from the menu list");
-            String menuItem = sc.next();
-            switch (menuItem) {
-                case "1":
-                    showListdisplay();
-                    break;
-
-                case "2":
-                    add();
-                    break;
-
-                case "3":
-                    update();
-                    break;
-
-                case "4":
-                    System.out.println("-------------------------------------------");
-                    System.out.println("Save and Quit");
-                    System.out.println("-------------------------------------------");
-                    task_file_handler.taskwritetofile();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println("Saving the tasks to the file");
-                    System.exit(0);
-
-                default:
-                    System.out.println();
-                    System.out.println("Please specify a valid number");
-
-            }
-        }
-    }
 }
 

@@ -1,6 +1,6 @@
 # Project-ToDoList
 
-##Project Objective : Build a todo list application​.
+## Project Objective : Build a todo list application​ which enable the user to
 
 ### Project Description
 

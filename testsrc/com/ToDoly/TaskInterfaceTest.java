@@ -11,8 +11,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.junit.jupiter.api.Assertions.*;
 
 class TaskInterfaceTest {
 
@@ -62,40 +61,40 @@ class TaskInterfaceTest {
     /**
      * Test the whether the task added is present in the List
      */
-    /* @Test
-    void addTestPass() {
-        Task taskadd = new Task("Analysis",LocalDate.parse("2018-12-12"),"Done","ToDoListv0.1");
-        tasks.add(taskadd);
-        assertEquals("Analysis",tasks.get(3).getTaskTitle());
-        assertEquals(LocalDate.parse("2018-12-12"),tasks.get(3).gettaskdueDate());
-        assertEquals("Done",tasks.get(3).gettaskStatus());
-        assertEquals("ToDoListv0.1",tasks.get(3).getprojectName());
-    }*/
+        /* @Test
+        void addTestPass() {
+            Task taskadd = new Task("Analysis",LocalDate.parse("2018-12-12"),"Done","ToDoListv0.1");
+            tasks.add(taskadd);
+            assertEquals("Analysis",tasks.get(3).getTaskTitle());
+            assertEquals(LocalDate.parse("2018-12-12"),tasks.get(3).gettaskdueDate());
+            assertEquals("Done",tasks.get(3).gettaskStatus());
+            assertEquals("ToDoListv0.1",tasks.get(3).getprojectName());
+        }*/
 
     /**
      * Test whether the task is present in the List -
      */
-   /* void addTestFail() {
-        Task taskadd = new Task("IT/SIT",LocalDate.parse("2018-12-16"),"Created","ToDoListv0.2");
-        tasks.add(taskadd);
-        assertEquals("IT/SIT",tasks.get(4).getTaskTitle());
-        assertEquals(LocalDate.parse("2018-12-19"),tasks.get(4).gettaskdueDate());
-        assertEquals("Done",tasks.get(4).gettaskStatus());
-        assertEquals("ToDoListv0.1",tasks.get(4).getprojectName());
-    }*/
+       /* void addTestFail() {
+            Task taskadd = new Task("IT/SIT",LocalDate.parse("2018-12-16"),"Created","ToDoListv0.2");
+            tasks.add(taskadd);
+            assertEquals("IT/SIT",tasks.get(4).getTaskTitle());
+            assertEquals(LocalDate.parse("2018-12-19"),tasks.get(4).gettaskdueDate());
+            assertEquals("Done",tasks.get(4).gettaskStatus());
+            assertEquals("ToDoListv0.1",tasks.get(4).getprojectName());
+        }*/
 
     /**
      * Test for IndexOutOfBoundsException
      */
 
-    /*void addTestOutofBoundsFail() {
-        Task taskadd = new Task("IT/SIT",LocalDate.parse("2018-12-16"),"Created","ToDoListv0.2");
-        tasks.add(taskadd);
-        assertEquals("IT/SIT",tasks.get(5).getTaskTitle());
-        assertEquals(LocalDate.parse("2018-12-19"),tasks.get(5).gettaskdueDate());
-        assertEquals("Done",tasks.get(5).gettaskStatus());
-        assertEquals("ToDoListv0.1",tasks.get(5).getprojectName());
-    }*/
+        /*void addTestOutofBoundsFail() {
+            Task taskadd = new Task("IT/SIT",LocalDate.parse("2018-12-16"),"Created","ToDoListv0.2");
+            tasks.add(taskadd);
+            assertEquals("IT/SIT",tasks.get(5).getTaskTitle());
+            assertEquals(LocalDate.parse("2018-12-19"),tasks.get(5).gettaskdueDate());
+            assertEquals("Done",tasks.get(5).gettaskStatus());
+            assertEquals("ToDoListv0.1",tasks.get(5).getprojectName());
+        }*/
     @Test
     void display(){
 
@@ -106,8 +105,8 @@ class TaskInterfaceTest {
 
         ArrayList<Task> sorted = new ArrayList<>(tasks);
 
-      tasks.sort((Task task1, Task task2) -> task1.gettaskdueDate().compareTo(task2.gettaskdueDate()));
-      // for(Task k : sorted)
+        tasks.sort((Task task1, Task task2) -> task1.gettaskdueDate().compareTo(task2.gettaskdueDate()));
+        // for(Task k : sorted)
         assertEquals(sorted.get(1).gettaskdueDate(), tasks.get(1).gettaskdueDate());
 
 
