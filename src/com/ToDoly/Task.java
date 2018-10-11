@@ -35,7 +35,6 @@ public class Task implements Serializable {
         this.dueDate = dueDate;
         this.taskStatus = taskStatus.trim();
         this.projectName = projectName.trim();
-
     }
 
     /** Method to set the task title
@@ -44,7 +43,6 @@ public class Task implements Serializable {
 
     public void setTaskTitle(String taskTitle) {
         this.taskTitle = taskTitle;
-
     }
 
     /** Method to set the duedate
@@ -104,7 +102,6 @@ public class Task implements Serializable {
     /** Method to return the project name associated with the task
      * @return projectName
      */
-
 
     public String getprojectName() {
         return projectName;

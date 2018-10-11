@@ -60,7 +60,6 @@ public class FileHandler implements Serializable {
 
         } catch (ClassNotFoundException cnf_exception) {
             System.out.println("The class not found");
-
         } catch (EOFException eof_exception) {
             System.out.println("No tasks to be displayed");
         } catch (FileNotFoundException fnf_Exception) {
@@ -70,7 +69,6 @@ public class FileHandler implements Serializable {
             io_exception.printStackTrace();
         }
         System.out.println();
-
         return tasks;
 
     }
