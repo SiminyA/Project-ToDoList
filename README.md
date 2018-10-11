@@ -22,7 +22,6 @@
 ##### All the tasks added will be saved in the text file. 
 ##### Each time the application launches, the existing task details are read from the file and the necessary operations can be performed.
 
-
 ## 3. Functional Requirements
 ##### This section includes the requirements that specify all the fundamental actions of the software system.
 
@@ -47,7 +46,7 @@
 ##### Description: In this feature, it is described the procedure of creating a new task, completing task’s fields and adding the task to a project
 ##### The user : User will select the Add new task option and on selection user will be prompted to specify the Task title, Due date , status and project name. On specifying the details , new task will be created 
 
-#### 3.2.4 ID: FR4
+##### 3.2.4 ID: FR4
 ##### Title:  Edit task
 ##### Description: In this feature, it is explained the procedure of editing an existing task and its fields.
 ##### The user : User will select the Edit task option. On selection user will be displayed with the existing task with taskno and all the necessary details
