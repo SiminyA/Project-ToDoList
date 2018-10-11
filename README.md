@@ -42,12 +42,12 @@
 ##### Description: In this feature , tasks can be displayed based on the sort criteria. 
 ##### The user : User on selecting the Show task list will be displayed with interactive menu to select the sort criteria - sort by due date or sort by project name
 
-##### 3.2.2 ID: FR3
+##### 3.2.3 ID: FR3
 ##### Title:  Add New task
 ##### Description: In this feature, it is described the procedure of creating a new task, completing task’s fields and adding the task to a project
 ##### The user : User will select the Add new task option and on selection user will be prompted to specify the Task title, Due date , status and project name. On specifying the details , new task will be created 
 
-#### 3.2.2 ID: FR4
+#### 3.2.4 ID: FR4
 ##### Title:  Edit task
 ##### Description: In this feature, it is explained the procedure of editing an existing task and its fields.
 ##### The user : User will select the Edit task option. On selection user will be displayed with the existing task with taskno and all the necessary details
@@ -57,20 +57,20 @@
 ##### User can modify the status of the task by selecting 'Mark as Done' , for the task no specified
 ##### User prompted with confirmation to proceed with the deletion of the specific task number provided
 
-##### 3.2.2 ID: FR5
+##### 3.2.5 ID: FR5
 ##### Title:  Save and Exit
 ##### Description: In this feature, it is described the procedure of saving the tasks to the file and exit from the application
 ##### The user : User will save the tasks created/updated to the file and will exit from the application
 
 ##  4.Analysis Models
 
-##### 3.1 Class Diagram
+##### 4.1 Class Diagram
 
 <img width="998" alt="class diagram todoly v0 1" src="https://user-images.githubusercontent.com/29890115/46829837-c7087500-cd53-11e8-99d8-3d73bf7b4035.png">
 
 
 
-##### 3.2 Activity Diagram
+##### 4.2 Activity Diagram
 
 <img width="718" alt="activity diagram 1" src="https://user-images.githubusercontent.com/29890115/46829924-0a62e380-cd54-11e8-92c5-deb774ff7d8b.png">
 
