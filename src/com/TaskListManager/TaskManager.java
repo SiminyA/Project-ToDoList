@@ -5,18 +5,18 @@
  */
 
 
-package com.ToDoly;
+package com.TaskListManager;
 
-import TaskToDoly.FileHandler;
-
+import ToDoList.FileHandler;
 
 import java.io.Serializable;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+import java.util.Scanner;
 
 
-public class TaskInterface implements Serializable {
+public class TaskManager implements Serializable {
 
     private FileHandler task_file_handler = new FileHandler();
 
@@ -26,7 +26,7 @@ public class TaskInterface implements Serializable {
      * Loads the existing tasks from the file to List.
      */
 
-    public TaskInterface() {
+    public TaskManager() {
         tasks = task_file_handler.taskloadtoarray();
     }
 
@@ -51,7 +51,7 @@ public class TaskInterface implements Serializable {
         System.out.println();
         System.out.println();
         System.out.println("*********************************************************");
-        System.out.println("                Welcome to ToDoly.");
+        System.out.println("                Welcome to ToDoly                        ");
         System.out.println("*********************************************************");
         System.out.println("You have " + (tasks.size() - done_task) + " tasks todo and " + done_task + " tasks are done!");
         System.out.println("**********************************************************");
