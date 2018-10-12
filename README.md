@@ -76,13 +76,13 @@
 
 ### 5. Software Requirements
 
-To run the ToDoList application, user should have the JDK 8 and above and IntelliJ IDEA to run the application
+##### To run the ToDoList application, user should have the JDK 8 and above and IntelliJ IDEA to run the application
 
-Download jdk from from the below link
+##### Download jdk from from the below link
 
 https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
 
-Download IntelliJ IDEA from the below link
+##### Download IntelliJ IDEA from the below link
 
 https://www.jetbrains.com/idea/download/#section=mac
 

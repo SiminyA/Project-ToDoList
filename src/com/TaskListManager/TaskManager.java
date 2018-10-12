@@ -10,10 +10,9 @@ package com.TaskListManager;
 import ToDoList.FileHandler;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.time.LocalDate;
 
 
 public class TaskManager implements Serializable {

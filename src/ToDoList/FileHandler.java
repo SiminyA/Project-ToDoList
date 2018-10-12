@@ -4,14 +4,14 @@
  * @author Siminy
  * @version 27-09-2018 version 1
  */
-package ToDoList;
 
+package ToDoList;
 
 import com.TaskListManager.Task;
 
-import java.util.*;
-
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class FileHandler implements Serializable {
@@ -64,7 +64,7 @@ public class FileHandler implements Serializable {
         } catch (EOFException eof_exception) {
             System.out.println("No tasks to be displayed");
         } catch (FileNotFoundException fnf_Exception) {
-            System.out.println("The file is not available to read the task. New file will be created");
+            System.out.println("The file is not available to read the task.");
         } catch (IOException io_exception) {
             System.out.println("Unexpected error occured");
             io_exception.printStackTrace();
