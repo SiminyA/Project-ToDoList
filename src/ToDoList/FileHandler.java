@@ -1,12 +1,13 @@
+
 /**
  * The class to handle all the file operations
  * @author Siminy
  * @version 27-09-2018 version 1
  */
+package ToDoList;
 
-package TaskToDoly;
 
-import com.ToDoly.Task;
+import com.TaskListManager.Task;
 
 import java.util.*;
 
@@ -23,8 +24,8 @@ public class FileHandler implements Serializable {
         try {
             FileOutputStream file_output_stream = new FileOutputStream("/Users/tmp-sda-1189/Documents/SampleTask.txt");
             ObjectOutputStream output_stream = new ObjectOutputStream(file_output_stream);
-            for (Task tsk : tasks) {
-                output_stream.writeObject(tsk);
+            for (Task writetasks : tasks) {
+                output_stream.writeObject(writetasks);
             }
             output_stream.close();
             file_output_stream.close();
@@ -75,6 +76,7 @@ public class FileHandler implements Serializable {
 
 
 }
+
 
 
 

@@ -1,17 +1,17 @@
+
 /** Class to launch the task menu interface
  *  @author Siminy
  * version 27-09-2018 version 1
  */
 
 
-package TaskToDoly;
+import com.TaskListManager.TaskManager;
 
-import com.ToDoly.TaskInterface;
-
-public class MainClass {
+public class ToDoListMain {
     public static void main(String args[]) {
-        TaskInterface task_interface = new TaskInterface();
+        TaskManager task_interface = new TaskManager();
         task_interface.run();
     }
 }
+
 
