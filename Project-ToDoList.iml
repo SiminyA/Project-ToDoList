@@ -6,7 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testsrc" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/TaskHandler" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/ToDoList" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
