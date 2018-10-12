@@ -7,7 +7,7 @@
  */
 
 
-package com.ToDoly;
+package com.TaskListManager;
 
 import java.io.Serializable;
 import java.time.LocalDate;

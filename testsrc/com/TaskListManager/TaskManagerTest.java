@@ -1,4 +1,4 @@
-package com.ToDoly;
+package com.TaskListManager;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,10 +13,10 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TaskInterfaceTest {
+class TaskManagerTest {
 
     private List<Task> tasks = new ArrayList<>();
-    TaskInterface tf = new TaskInterface();
+    TaskManager tf = new TaskManager();
 
 
     @BeforeEach
