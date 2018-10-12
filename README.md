@@ -68,19 +68,23 @@
 <img width="998" alt="class diagram todoly v0 1" src="https://user-images.githubusercontent.com/29890115/46829837-c7087500-cd53-11e8-99d8-3d73bf7b4035.png">
 
 
-
 ##### 4.2 Activity Diagram
 
-<img width="718" alt="activity diagram 1" src="https://user-images.githubusercontent.com/29890115/46829924-0a62e380-cd54-11e8-92c5-deb774ff7d8b.png">
+<img width="533" alt="activity diagram for todolist application" src="https://user-images.githubusercontent.com/29890115/46863989-d62c0900-cdcd-11e8-9462-fe01f4ca1117.png">
 
+<img width="1053" alt="activity diagram for todolist application contd" src="https://user-images.githubusercontent.com/29890115/46863985-d3c9af00-cdcd-11e8-8df4-74d320c76929.png">
 
-<img width="327" alt="activity diagram contd 3" src="https://user-images.githubusercontent.com/29890115/46829968-236b9480-cd54-11e8-9488-0d3b546f6dca.png">
+### 5. Software Requirements
 
+To run the ToDoList application, user should have the JDK 8 and above and IntelliJ IDEA to run the application
 
-<img width="1085" alt="activity diagram contd 2" src="https://user-images.githubusercontent.com/29890115/46829967-236b9480-cd54-11e8-9493-50e78324fffb.png">
+Download jdk from from the below link
 
+https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
 
+Download IntelliJ IDEA from the below link
 
+https://www.jetbrains.com/idea/download/#section=mac
 
 
 
